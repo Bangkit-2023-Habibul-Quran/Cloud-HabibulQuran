@@ -1,7 +1,7 @@
 # Cloud-HabibulQuran
 
 # API LIST
-## REGISTER
+## Register
 - URL
   - /register 
 - Method 
@@ -63,3 +63,109 @@
         "message": "Silahkan verifikasi email anda."
     }
 ```
+
+## Huruf
+### List Huruf
+- URL
+  - /huruf
+- Response
+  ```
+  {
+    "code":200,
+    "status":"OK.",
+    "error":false,
+    "message":"Sukses mengambil semua huruf.",
+    "data"
+  } 
+  ```
+### Spesifik Huruf
+- URL
+  - /huruf/{huruf}
+- Response
+  ```
+  {
+    "code":200,
+    "status":"OK.",
+    "error":false,
+    "message":"Sukses mengambil huruf.",
+    "data": {
+      "arabic":"ث",
+      "audio":"https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/03_Tsa.wav","pronounciation":"tsa"
+    }
+  }
+  ```
+### List Surat
+- URL
+  - /surat
+- Response
+```
+  {
+    "code":200,
+    "status":"OK.",
+    "error":false,
+    "message":"Sukses mengambil semua surat.",
+    "data"
+  }
+```
+
+### Spesifik Surat
+- URL
+  - /surat/{surat}
+- Response
+  ```
+  {
+    "code":200,
+    "status":"OK",
+    "error":false,
+    "message":"Sukses mengambil surat",
+    "data": {
+      "number":1,
+      "numberOfVerses":7,
+      "name":{
+        "short":"الفاتحة",
+        "transliteration":{"id":"Al-Fatihah"}
+      },
+      "preBismillah":null,
+      "verses"
+    }
+  ```
+  
+  ### Spesifik Ayat
+- URL
+  - /surat/{surat}/{ayat}
+- Response
+  ```
+  {
+    "code":200,
+    "status":"Success",
+    "message":"Success",
+    "data": {
+      "number": {
+        "inSurah":1
+      },
+      "text": {
+        "arab":"بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ"
+      },
+      "translation": {
+      "id":"Dengan nama Allah Yang Maha Pengasih, Maha Penyayang."},
+      "audio": {
+        "primary":"https://cdn.alquran.cloud/media/audio/ayah/ar.alafasy/1",
+        "secondary": [
+          "https://cdn.islamic.network/quran/audio/128/ar.alafasy/1.mp3",
+          "https://cdn.islamic.network/quran/audio/64/ar.alafasy/1.mp3"
+        ]
+      },
+      "surat": {
+        "number":1,
+        "numberOfVerses":7,
+        "name": {
+          "short":"الفاتحة",
+          "transliteration":{
+            "id":"Al-Fatihah"
+          }
+        },
+        "preBismillah":null
+      }
+    }
+  }
+  ```
