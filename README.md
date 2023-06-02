@@ -41,7 +41,7 @@
     { 
       "error": false,
       "message": "Login Berhasil",
-      "data": {
+      "user": {
           "_id": "6478d42c1c597d68741481a6",
           "name": "username",
           "email": "habibul2023@gmail.com",
@@ -63,6 +63,71 @@
         "message": "Silahkan verifikasi email anda."
     }
 ```
+
+## Request forget password
+- URL 
+  - /forget
+- Method
+  - POST
+-  Request body parameter
+  - email (string) 
+- Response 
+```
+  - 200
+    {
+      "error": false,
+      "message": "Silakan periksa email Anda untuk mengatur ulang kata sandi Anda."
+    }
+  - 400
+    {
+      "error": true,
+      "message": "Email pengguna salah."
+    }
+```
+
+## Forget Password
+- URL 
+  - /forget-password
+```
+https://link/forget-password?token=SnHLbF0wx5xFsxznVcZJcOFtOyBPz9mi
+```
+- Method
+  - POST
+- Request body parameter
+  - password (string)
+  - user_id (string) hidden
+- Response
+```
+  - 200
+    {
+      "error":false,
+      "message":"Password telah diperbarui"
+    }
+```
+
+## Verification
+- URL
+  - /verification
+- Method
+  - POST
+- Request body parameter
+  - email (string)
+- Response
+```
+  - 200
+    {"error":false,"message":"Setel ulang email verifikasi telah dikirim ke email Anda."}
+  - 400
+    {"error":true,"message":"Email ini tidak terdaftar."}
+```
+
+## Edit profile
+- URL 
+  - /edit
+```
+https://loginregister-dot-habibulquran.et.r.appspot.com/edit?id=64788c6a48951a16c25927d8 
+```
+- Method
+  - POST
 
 ## Huruf
 ### List Huruf
