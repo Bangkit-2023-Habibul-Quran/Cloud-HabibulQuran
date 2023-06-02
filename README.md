@@ -12,7 +12,9 @@
   - password (string), required
   - file (max size 2mb), valid image file, required
   - jenisKelamin (enum: [ Laki-laki, Perempuan ]), required
-  - birthdate (Date) required
+  - birthdateYear (Date) required
+  - birthdateMonth (Date) required
+  - birthdateDay (Date) required
 - Response
 ```
   - 201
@@ -115,9 +117,15 @@ https://link/forget-password?token=SnHLbF0wx5xFsxznVcZJcOFtOyBPz9mi
 - Response
 ```
   - 200
-    {"error":false,"message":"Setel ulang email verifikasi telah dikirim ke email Anda."}
+    {
+      "error":false,
+      "message":"Setel ulang email verifikasi telah dikirim ke email Anda."
+    }
   - 400
-    {"error":true,"message":"Email ini tidak terdaftar."}
+    {
+      "error":true,
+      "message":"Email ini tidak terdaftar."
+    }
 ```
 
 ## Edit profile
@@ -128,109 +136,18 @@ https://loginregister-dot-habibulquran.et.r.appspot.com/edit?id=64788c6a48951a16
 ```
 - Method
   - POST
+- Request body parameter
+  - user_id (string) hidden
+  - name (string) required
+  - email (string) required
+  - jenisKelamin (enum: [ Laki-laki, Perempuan ]), required
+  - birthdateYear (Date) required
+  - birthdateMonth (Date) required
+  - birthdateDay (Date) required
 
-## Huruf
-### List Huruf
-- URL
-  - /huruf
-- Response
-  ```
-  {
-    "code":200,
-    "status":"OK.",
-    "error":false,
-    "message":"Sukses mengambil semua huruf.",
-    "data"
-  } 
-  ```
-### Spesifik Huruf
-- URL
-  - /huruf/{huruf}
-- Response
-  ```
-  {
-    "code":200,
-    "status":"OK.",
-    "error":false,
-    "message":"Sukses mengambil huruf.",
-    "data": {
-      "arabic":"ث",
-      "audio":"https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/03_Tsa.wav","pronounciation":"tsa"
-    }
-  }
-  ```
-### List Surat
-- URL
-  - /surat
-- Response
-```
-  {
-    "code":200,
-    "status":"OK.",
-    "error":false,
-    "message":"Sukses mengambil semua surat.",
-    "data"
-  }
-```
-
-### Spesifik Surat
-- URL
-  - /surat/{surat}
-- Response
-  ```
-  {
-    "code":200,
-    "status":"OK",
-    "error":false,
-    "message":"Sukses mengambil surat",
-    "data": {
-      "number":1,
-      "numberOfVerses":7,
-      "name":{
-        "short":"الفاتحة",
-        "transliteration":{"id":"Al-Fatihah"}
-      },
-      "preBismillah":null,
-      "verses"
-    }
-  ```
-  
-  ### Spesifik Ayat
-- URL
-  - /surat/{surat}/{ayat}
-- Response
-  ```
-  {
-    "code":200,
-    "status":"Success",
-    "message":"Success",
-    "data": {
-      "number": {
-        "inSurah":1
-      },
-      "text": {
-        "arab":"بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ"
-      },
-      "translation": {
-      "id":"Dengan nama Allah Yang Maha Pengasih, Maha Penyayang."},
-      "audio": {
-        "primary":"https://cdn.alquran.cloud/media/audio/ayah/ar.alafasy/1",
-        "secondary": [
-          "https://cdn.islamic.network/quran/audio/128/ar.alafasy/1.mp3",
-          "https://cdn.islamic.network/quran/audio/64/ar.alafasy/1.mp3"
-        ]
-      },
-      "surat": {
-        "number":1,
-        "numberOfVerses":7,
-        "name": {
-          "short":"الفاتحة",
-          "transliteration":{
-            "id":"Al-Fatihah"
-          }
-        },
-        "preBismillah":null
-      }
-    }
-  }
-  ```
+### Endpoint Al-Quran
+- [x] `/huruf` = Menampilkan list huruf.
+- [x] `/huruf/{huruf}` = Menampilkan spesifik huruf. *Contoh: [/huruf/1](https://fitur-dot-habibulquran.et.r.appspot.com/huruf/1)*
+- [x] `/surat` = Menampilkan list surat.
+- [x] `/surat/{surat}` = Menampilkan spesifik surat. *Contoh: [/surat/1](https://fitur-dot-habibulquran.et.r.appspot.com/surat/1)*
+- [x] `/surat/{surat}/{ayat}` = Menampilkan spesifik ayat. *Contoh: [/surat/1/1](https://fitur-dot-habibulquran.et.r.appspot.com/surat/1/1)*
