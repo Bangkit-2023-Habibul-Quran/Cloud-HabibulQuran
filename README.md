@@ -57,13 +57,33 @@
             - Set the port number to be `27017`
                > Port 27017 is the default port number for mongod and mongos instances
           <br>
-  * **Google App Engine (GAE)**
+* **Google App Engine (GAE)**
     <br>
     The Google App Engine (GAE) is a Platform-as-a-Service (PaaS) is a GCP service used to deploy the REST API that has been previously configured using the ExpressJs and many other dependencies. Unlike GCE or Kubernetes Engines, GAE offers the flexibility to focus on other concurrent web applications and processes without the need to configure the architecture of the instance. Using the previously created and deployed virtual machine `mongodb-login`, we will use the **External IP Address** for GAE to access the MongoDB.
     <br><br>
-    To deploy an application through GAE,
+    To deploy an application through GAE
     * On GCP console, go to **Navigation Menu -> App Engine**
     * Click **Create Application**
+    <br>
+* **Service Account**
+    <br>
+    * On GCP console, go to **Navigation Menu -> IAM & ADMIN -> Service Account**
+      * In the App Engine service account (Project_id@appspot.gserviceaccount.com) click three dot -> Manage keys -> Create new key -> JSON -> Create 
+    * Rename .json file downloaded with credentials.json
+    <br>
+* **Google Cloud Storage**
+    <br>
+    * On GCP console, go to **Navigation Menu -> Cloud Storage -> Buckets**
+    * Click Create
+    * Specify unique Buckets name `login-picture`
+    * Select the region to `asia-southeast2`
+    * Uncheck Enforce public access prevention on this bucket
+    * Select access control to Fine-grained
+    * Click **Create**
+    * Edit access the bucket -> add principal -> allUsers Select the role Storage Legacy Bucket Reader and Storage Legacy Object Reader -> Click **Save**
+    <br>
+* **Cloud Shell**
+    <br>
     * Activate **Cloud Shell**
     * Clone Cloud-HabibulQuran git repository
       ````
