@@ -59,7 +59,7 @@
           <br>
   * **Google App Engine (GAE)**
     <br>
-    The Google App Engine (GAE) is a Platform-as-a-Service (PaaS) is a GCP service used to deploy the REST API that has been previously configured using the ExpressJs and many other dependencies. Unlike GCE or Kubernetes Engines, GAE offers the flexibility to focus on other concurrent web applications and processes without the need to configure the architecture of the instance. Using the previously created and deployed virtual machine `mongo-nusal`, we will use the **External IP Address** for GAE to access the MongoDB.
+    The Google App Engine (GAE) is a Platform-as-a-Service (PaaS) is a GCP service used to deploy the REST API that has been previously configured using the ExpressJs and many other dependencies. Unlike GCE or Kubernetes Engines, GAE offers the flexibility to focus on other concurrent web applications and processes without the need to configure the architecture of the instance. Using the previously created and deployed virtual machine `mongodb-login`, we will use the **External IP Address** for GAE to access the MongoDB.
     <br><br>
     To deploy an application through GAE,
     * On GCP console, go to **Navigation Menu -> App Engine**
@@ -67,11 +67,11 @@
     * Activate **Cloud Shell**
     * Clone Cloud-HabibulQuran git repository
       ````
-      git clone "..."
+      git clone -b habib-login-register https://github.com/Bangkit-2023-Habibul-Quran/Cloud-HabibulQuran.git"
       ````
-    * Go to the NusaL-CC folder
+    * Go to the  folder
       ````
-      cd "..."
+      cd habibulLogin
       ````
     * Make sure that you have a `app.yaml` file using the `ls` command on **Cloud Shell**
     * Example app.yaml file
@@ -90,7 +90,7 @@
        ```
 
 # Library
-Libraries used for developing NusaL :
+Libraries used for developing Habibul Quran :
 * ExpressJs
 * Express-session
 * Mongoose
