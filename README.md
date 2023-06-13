@@ -120,7 +120,7 @@ Libraries used for developing NusaL :
   - name (string), required
   - email (string), required 
   - password (string), required
-  - file (max size 2mb), valid image file, required
+  - image (max size 2mb), valid image file, required
   - jenisKelamin (enum: [ Laki-laki, Perempuan ]), required
   - birthdateYear (Date) required
   - birthdateMonth (Date) required
