@@ -1,0 +1,32 @@
+{
+  "name": "habiblogin",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start-dev": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "@google-cloud/storage": "^6.10.1",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "fs": "^0.0.1-security",
+    "mongodb": "^5.5.0",
+    "mongoose": "^7.2.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.2",
+    "path": "^0.12.7",
+    "randomstring": "^1.2.3"
+  },
+  "description": "",
+  "devDependencies": {
+    "eslint": "^8.41.0",
+    "nodemon": "^2.0.22"
+  }
+}

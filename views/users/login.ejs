@@ -1,0 +1,25 @@
+<% include('../layouts/header.ejs') %>
+
+<h1>Login</h1>
+
+<% if(typeof message !== 'undefined'){ %>
+<h4><%= message %></h4>
+<% } %>
+
+<form action="/login" method="post">
+  <input type="email" name="email" required placeholder="Masukkan Email" />
+  <br /><br />
+  <input
+    type="password"
+    name="password"
+    required
+    placeholder="Masukkan Password"
+  />
+  <br /><br />
+  <input type="submit" value="Login" />
+</form>
+<a href="/forget">Lupa Password</a>
+
+<a href="/verification">Verifikasi</a>
+
+<% include('../layouts/footer.ejs') %>

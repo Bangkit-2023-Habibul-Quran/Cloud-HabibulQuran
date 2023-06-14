@@ -1,0 +1,38 @@
+<% include('../layouts/header.ejs') %>
+
+<h3>Selamat datang, <%= user.name %></h3>
+
+<table width="50%">
+  <tr>
+    <td>
+      <img
+        src="<%= user.image %>"
+        width="100px"
+        height="100px"
+        alt="<%= user.image %>"
+      />
+    </td>
+  </tr>
+  <tr>
+    <td>Nama</td>
+    <td><%= user.name %></td>
+  </tr>
+  <tr>
+    <td>Email</td>
+    <td><%= user.email %></td>
+  </tr>
+  <tr>
+    <td>Jenis Kelamin</td>
+    <td><%= user.jenisKelamin %></td>
+  </tr>
+  <tr>
+    <td>Tanggal Lahir</td>
+    <td><%= user.birthdate.toLocaleDateString('en-GB'); %></td>
+  </tr>
+</table>
+
+<a href="/edit?id=<%= user._id %>">Edit</a>
+<br />
+<a href="/logout">Logout</a>
+
+<% include('../layouts/footer.ejs') %>

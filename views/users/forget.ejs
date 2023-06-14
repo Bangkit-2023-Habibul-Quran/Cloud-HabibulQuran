@@ -1,0 +1,15 @@
+<% include('../layouts/header.ejs') %>
+
+<h1>Lupa Password</h1>
+
+<% if(typeof message !== 'undefined'){ %>
+<h4><%= message %></h4>
+<% } %>
+
+<form action="/forget" method="post">
+  <input type="email" name="email" required placeholder="Masukkan email">
+  <br><br>
+  <input type="submit" value="Kirim Reset Tautan">
+</form>
+
+<% include('../layouts/footer.ejs') %>

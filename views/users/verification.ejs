@@ -1,0 +1,15 @@
+<% include('../layouts/header.ejs') %>
+
+<h1>Verifikasi</h1>
+
+<% if(typeof message !== 'undefined'){ %>
+<h4><%= message %></h4>
+<% } %>
+
+<form action="" method="post">
+  <input type="email" name="email" required placeholder="Masukkan email" />
+  <br /><br />
+  <input type="submit" value="Kirim Tautan Verifikasi" />
+</form>
+
+<% include('../layouts/footer.ejs') %>
