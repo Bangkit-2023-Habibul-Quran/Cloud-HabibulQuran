@@ -1,6 +1,11 @@
-# Cloud-HabibulQuran
+# HabibulQuran-Cloud Computing
+Bangkit 2023 Product-based Capstone Project 
+* **HabibulQuran : Al-Quran Learning Application** 
 
-# Deployment
+# Introduction
+HabibulQuran is an Android application supported with a REST API using the ExpressJs Framework for Node.js and MongoDB as the database to **store the user data**. This API is then being deployed using Google App Engine (GAE) with its database (MongoDB) using a Virtual Machine from Google Compute Engine (GCE). In addition, Cloud Storage Service is used to store the user's profile picture. 
+
+# Deployment With Google Cloud Platform 
 * **Google Cloud Platform (GCP)**
   * **Prerequisites** 
     <br>
@@ -108,23 +113,6 @@
        ```
        gcloud app browse -s loginregister
        ```
-
-# Library
-Libraries used for developing Habibul Quran :
-* ExpressJs
-* Express-session
-* Mongoose
-* mongodb
-* bcrypt
-* Embedded JavaScript (EJS)
-* @google-cloud/storage
-* Nodemailer
-* Nodemon
-* path
-* multer
-* randomstring
-* cors
-* fs
 
 # API Endpoint
 * App Engine Backend:
@@ -273,3 +261,20 @@ https://loginregister-dot-habibulquran.et.r.appspot.com/edit?id=64788c6a48951a16
   - birthdateYear (Date) required
   - birthdateMonth (Date) required
   - birthdateDay (Date) required
+
+# Library
+Libraries used for developing Habibul Quran :
+* ExpressJs
+* Express-session
+* Mongoose
+* mongodb
+* bcrypt
+* Embedded JavaScript (EJS)
+* @google-cloud/storage
+* Nodemailer
+* Nodemon
+* path
+* multer
+* randomstring
+* cors
+* fs
