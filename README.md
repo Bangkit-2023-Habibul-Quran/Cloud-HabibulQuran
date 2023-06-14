@@ -183,7 +183,6 @@ Libraries used for developing Habibul Quran :
           "image": "https://storage.googleapis.com/login-picture/Arrow.png",
           "is_verified": 1,
           "token": "xDEKlbAaVR1hG2aMAbXjB1iknKTbQt7x",
-          "score": [],
           "__v": 0
     }
   - 400
