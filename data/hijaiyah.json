@@ -1,0 +1,207 @@
+{
+  "data": [
+    {
+      "arabic": "ا",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/00_Alif.wav",
+      "pronounciation": "alif",
+      "prediction":"Alif",
+      "available": true
+    },
+    {
+      "arabic": "ب",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/01_Ba.wav",
+      "pronounciation": "ba",
+      "prediction":"Ba",
+      "available": false
+    },
+    {
+      "arabic": "ت",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/02_Ta.wav",
+      "pronounciation": "ta",
+      "prediction":"Ta",
+      "available": false
+    },
+    {
+      "arabic": "ث",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/03_Tsa.wav",
+      "pronounciation": "tsa",
+      "prediction":"Sa",
+      "available": false
+    },
+    {
+      "arabic": "ج",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/04_Jim.wav",
+      "pronounciation": "jim",
+      "prediction":"Jeem",
+      "available": false
+    },
+    {
+      "arabic": "ح",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/05_Hha.wav",
+      "pronounciation": "ha",
+      "prediction":"Hha",
+      "available": false
+    },
+    {
+      "arabic": "خ",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/06_Kha.wav",
+      "pronounciation": "kho",
+      "prediction":"Kha",
+      "available": false
+    },
+    {
+      "arabic": "د",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/07_Dal.wav",
+      "pronounciation": "dal",
+      "prediction":"Dal",
+      "available": true
+    },
+    {
+      "arabic": "ذ",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/08_Dzhal.wav",
+      "pronounciation": "dzal",
+      "prediction":"Zhal",
+      "available": false
+    },
+    {
+      "arabic": "ر",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/09_Raa.wav",
+      "pronounciation": "ro",
+      "prediction":"Raa",
+      "available": false
+    },
+    {
+      "arabic": "ز",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/10_Zaa.wav",
+      "pronounciation": "zai",
+      "prediction":"Zaa",
+      "available": false
+    },
+    {
+      "arabic": "س",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/11_Sin.wav",
+      "pronounciation": "sin",
+      "prediction":"Seen",
+      "available": true
+    },
+    {
+      "arabic": "ش",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/12_Syin.wav",
+      "pronounciation": "syin",
+      "prediction":"Sheen",
+      "available": false
+    },
+    {
+      "arabic": "ص",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/13_Shad.wav",
+      "pronounciation": "shod",
+      "prediction":"Suad",
+      "available": false
+    },
+    {
+      "arabic": "ض",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/14_Dhad.wav",
+      "pronounciation": "dhod",
+      "prediction":"Duad",
+      "available": false
+    },
+    {
+      "arabic": "ط",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/15_Tha.wav",
+      "pronounciation": "tho",
+      "prediction":"Tua",
+      "available": true
+    },
+    {
+      "arabic": "ظ",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/16_Zha.wav",
+      "pronounciation": "zho",
+      "prediction":"Zua",
+      "available": false
+    },
+    {
+      "arabic": "ع",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/17_'Aain.wav",
+      "pronounciation": "'ain",
+      "prediction":"Aain",
+      "available": false
+    },
+    {
+      "arabic": "ﻍ",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/18_Ghain.wav",
+      "pronounciation": "ghoin",
+      "prediction":"Ghain",
+      "available": false
+    },
+    {
+      "arabic": "ﻑ",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/19_Fa.wav",
+      "pronounciation": "fa",
+      "prediction":"Faa",
+      "available": true
+    },
+    {
+      "arabic": "ﻕ",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/20_Qaf.wav",
+      "pronounciation": "qof",
+      "prediction":"Quaf",
+      "available": false
+    },
+    {
+      "arabic": "ﻙ",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/21_Kaf.wav",
+      "pronounciation": "kaf",
+      "prediction":"Kaif",
+      "available": false
+    },
+    {
+      "arabic": "ﻝ",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/22_Lam.wav",
+      "pronounciation": "lam",
+      "prediction":"Laam",
+      "available": true
+    },
+    {
+      "arabic": "ﻡ",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/23_Mim.wav",
+      "pronounciation": "mim",
+      "prediction":"Meem",
+      "available": false
+    },
+    {
+      "arabic": "ن",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/24_Nun.wav",
+      "pronounciation": "nun",
+      "prediction":"Noon",
+      "available": true
+    },
+    {
+      "arabic": "ه",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/26_Haa.wav",
+      "pronounciation": "ha",
+      "prediction":"Haa",
+      "available": false
+    },
+    {
+      "arabic": "و",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/25_Wau.wav",
+      "pronounciation": "wau",
+      "prediction":"Wao",
+      "available": false
+    },
+    {
+      "arabic": "ء",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/28_Hamzah.wav",
+      "pronounciation": "hamzah",
+      "prediction":"Hamzah",
+      "available": false
+    },
+    {
+      "arabic": "ي",
+      "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/27_Yaa.wav",
+      "pronounciation": "ya",
+      "prediction":"Yaa",
+      "available": false
+    }
+  ]
+}
