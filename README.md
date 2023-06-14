@@ -5,6 +5,41 @@ Bangkit 2023 Product-based Capstone Project
 # Introduction
 HabibulQuran is an Android application supported with a REST API using the ExpressJs Framework for Node.js and MongoDB as the database to **store the user data**. This API is then being deployed using Google App Engine (GAE) with its database (MongoDB) using a Virtual Machine from Google Compute Engine (GCE). In addition, Cloud Storage Service is used to store the user's profile picture. 
 
+**File Structure :**
+
+```
+habibLogin
+├── config/
+│	├── config.json
+├── controllers/
+|	├── user.js
+├── middleware/
+|	├── auth.js
+├── models/
+|	├── usermodel.js
+├── views/
+|	├── layouts/
+|	| ├── footer.ejs
+|	| ├── header.ejs
+|	├── users/
+|	| ├── 404.ejs
+|	| ├── edit.ejs
+|	| ├── email-verified.js
+|	| ├── forget-password.ejs
+|	| ├── forget.ejs
+|	| ├── home.ejs
+|	| ├── login.ejs
+|	| ├── registration.ejs
+|	| ├── verification.ejs
+├── app.yaml
+├── router.js
+├── server.js
+├── credentials.json
+├── package.json
+└── package-lock.json
+
+```
+
 # Deployment With Google Cloud Platform 
 * **Google Cloud Platform (GCP)**
   * **Prerequisites** 
