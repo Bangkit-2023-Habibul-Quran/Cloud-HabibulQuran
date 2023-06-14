@@ -87,11 +87,11 @@
     * Activate **Cloud Shell**
     * Clone Cloud-HabibulQuran git repository
       ````
-      git clone -b habib-login-register https://github.com/Bangkit-2023-Habibul-Quran/Cloud-HabibulQuran.git"
+      git clone -b habib-login-register https://github.com/Bangkit-2023-Habibul-Quran/Cloud-HabibulQuran.git habibLogin
       ````
     * Go to the  folder
       ````
-      cd habibulLogin
+      cd habibLogin
       ````
     * Make sure that you have a `app.yaml` file using the `ls` command on **Cloud Shell**
     * Example app.yaml file
@@ -106,7 +106,7 @@
      * If any prompt shown press `Y` and click enter
      * View Deployed App after successfully deployed
        ```
-       gcloud app browse
+       gcloud app browse -s loginregister
        ```
 
 # Library
