@@ -3,6 +3,8 @@ Bangkit 2023 Product-based Capstone Project
 * **HabibulQuran : Al-Quran Learning Application** 
 
 # Introduction
+This API data source comes from [quran-api](https://api.quran.gading.dev) by saving the data into a JSON file with a new structure for better usage and performance. 
+
 This API is created using the [Express Web Application Framework](https://expressjs.com/) and several additional libraries that you can see in the `package.json` file.
 
 **File Structure :**
@@ -12,13 +14,14 @@ habibFitur
 ├── data/
 │	├── alquran.json
 │	└── hijaiyah.json
-  └── tes.json
+│	└── tes.json
 ├── handlers/
 |	├── huruf.js
 |	├── surat.js
 |	├── tes.js
-├── middleware.js
-├── util/
+├── middlewares.js
+├── routes.js
+├── server.js
 ├── package.json
 └── package-lock.json
 
