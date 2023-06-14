@@ -114,10 +114,6 @@ HabibulQuran is an Android application supported with a REST API using the Expre
        gcloud app browse -s loginregister
        ```
 
-# API Endpoint
-* App Engine Backend:
-  * 
-
 # API LIST
 ## Register
 - URL
