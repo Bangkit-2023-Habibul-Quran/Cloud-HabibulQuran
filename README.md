@@ -3,6 +3,26 @@ Bangkit 2023 Product-based Capstone Project
 * **HabibulQuran : Al-Quran Learning Application** 
 
 # Introduction
+This API is created using the [Express Web Application Framework](https://expressjs.com/) and several additional libraries that you can see in the `package.json` file.
+
+**File Structure :**
+
+```
+habibFitur
+├── data/
+│	├── alquran.json
+│	└── hijaiyah.json
+  └── tes.json
+├── handlers/
+|	├── huruf.js
+|	├── surat.js
+|	├── tes.js
+├── middleware.js
+├── util/
+├── package.json
+└── package-lock.json
+
+```
 
 # Features
 - [x] Text surahs and verses in arabic
