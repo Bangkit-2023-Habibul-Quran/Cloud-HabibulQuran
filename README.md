@@ -292,6 +292,14 @@ https://loginregister-dot-habibulquran.et.r.appspot.com/edit?id=64788c6a48951a16
   - birthdateYear (Date) required
   - birthdateMonth (Date) required
   - birthdateDay (Date) required
+- Response
+```
+  - 200
+    {
+      "error": false,
+      "message": "Profil berhasil diperbarui",
+    }
+```
 
 # Library
 Libraries used for developing Habibul Quran :
