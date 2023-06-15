@@ -299,6 +299,12 @@ https://loginregister-dot-habibulquran.et.r.appspot.com/edit?id=64788c6a48951a16
       "error": false,
       "message": "Profil berhasil diperbarui",
     }
+  - 500
+    {
+      "error": true,
+      "message": "Terjadi kesalahan server",
+    }
+
 ```
 
 # Library
