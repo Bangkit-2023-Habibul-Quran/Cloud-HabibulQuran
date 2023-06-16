@@ -78,4 +78,6 @@ user_route.get("/edit", auth.isLogin, userController.editLoad);
 
 user_route.post("/edit", userController.updateProfile);
 
+user_route.post("/data", userController.dataLoad);
+
 module.exports = user_route;

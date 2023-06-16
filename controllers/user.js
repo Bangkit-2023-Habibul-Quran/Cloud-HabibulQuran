@@ -37,7 +37,7 @@ const sendVerifyMail = async (name, email, user_id) => {
       html:
         "<p>Halo " +
         name +
-        '.</p> <p>Selamat menggunakan aplikasi Habib Al-Quran.</p> <p>Silahkan klik disini untuk <a href="https://habibulquran.et.r.appspot.com/verify?id=' +
+        '.</p> <p>Selamat menggunakan aplikasi Habib Al-Quran.</p> <p>Silahkan klik disini untuk <a href="https://loginregister-dot-habibulquran.et.r.appspot.com/verify?id=' +
         user_id +
         '"> Verifikasi </a> Email Anda.</p>',
     };
@@ -74,7 +74,7 @@ const sendResetPasswordMail = async (name, email, token) => {
       html:
         "<p>Halo " +
         name +
-        ', Silahkan klik disini untuk <a href="https://habibulquran.et.r.appspot.com/forget-password?token=' +
+        ', Silahkan klik disini untuk <a href="loginregister-dot-habibulquran.et.r.appspot.com/forget-password?token=' +
         token +
         '"> mengatur ulang </a> password anda.</p>',
     };
@@ -419,23 +419,36 @@ const editLoad = async (req, res) => {
 
 const updateProfile = async (req, res) => {
   try {
-    await User.findByIdAndUpdate(
+    userData = await User.findByIdAndUpdate(
       { _id: req.body.user_id },
       {
         $set: {
           name: req.body.name,
           email: req.body.email,
           jenisKelamin: req.body.jenisKelamin,
-          birthdateYear: req.body.birthdateYear,
-          birthdateMonth: req.body.birthdateMonth,
-          birthdateDay: req.body.birthdateDay,
+          birthdate: new Date(req.body.birthdateYear, req.body.birthdateMonth - 1, req.body.birthdateDay), 
         },
       }
     );
-    res.status(200).json({ error: false, message: "Profil berhasil diperbarui" });
+    res.status(200).json({ error: false, message: "Profil berhasil diperbarui", user: userData });
   } catch (error) {
     console.log(error.message);
     res.status(500).json({ error: true, message: "Terjadi kesalahan server" });
+  }
+};
+
+const dataLoad = async (req, res) => {
+  try {
+    const userData = await User.findById({ _id: req.body.user_id }).select('-token');
+
+    if (userData) {
+      res.status(200).json({error: false, user: userData });
+    } else {
+      res.status(404).json({error: true, message: "id tidak valid" })
+    }
+  } catch (error) {
+    res.status(404).json({error: true, message: "id tidak valid" })
+    console.log(error.message);
   }
 };
 
@@ -455,4 +468,5 @@ module.exports = {
   sentVerificationLink,
   editLoad,
   updateProfile,
+  dataLoad
 };
