@@ -13,25 +13,23 @@ router.use((req, res, next) => {
 });
 
 router.get('/', (req, res) => res.status(200).send({
-  fitur: {
+  huruf: {
     listHuruf: '/huruf',
     spesifikHuruf: '/huruf/{huruf}',
     AllSurat: '/surat',
-    ListSurat: '/listsurat',
+    ListSurat:"/listsurat", 
     spesifikSurat: '/surat/{surat}',
     spesifikAyat: '/surat/{surat}/{ayat}',
-    testSurat: '/tes',
-    listTesSurat: '/listtes'
+    testSurat: '/tes'
   },
 }));
 
-router.get('/huruf', caching, HurufHandler.getAllHijaiyah);
+router.get('/huruf/', caching, HurufHandler.getAllHijaiyah);
 router.get('/huruf/:huruf', caching, HurufHandler.getHijaiyah);
 router.get('/surat', caching, SuratHandler.getAllSurat);
 router.get('/listsurat', caching, SuratHandler.getListSurat);
 router.get('/surat/:surat', caching, SuratHandler.getSurat);
 router.get('/surat/:surat/:ayat', caching, SuratHandler.getAyat);
 router.get('/tes', caching, tesHandler.getAllTes);
-router.get('/listtes', caching, tesHandler.getListTes);
 
 module.exports = router;
