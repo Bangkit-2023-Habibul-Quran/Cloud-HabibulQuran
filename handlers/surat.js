@@ -14,10 +14,11 @@ class SuratHandler {
       data,
     });
   }
+
   static getListSurat(req, res) {
     const data = alquran.map((item) => {
       const surat = { ...item };
-      delete surat.verses 
+      delete surat.verses
       return surat;
     });
     return res.status(200).send({
@@ -28,6 +29,7 @@ class SuratHandler {
       data,
     });
   }
+
   static getSurat(req, res) {
     const { surat } = req.params;
     const data = alquran[surat - 1];
@@ -42,9 +44,9 @@ class SuratHandler {
     }
     return res.status(404).send({
       code: 404,
-      status: 'Failed',
+      status: 'Gagal',
       error: true,
-      message: `Surat "${surat}" is not found`,
+      message: `Surat "${surat}" tidak ditemukan`,
       data: {},
     });
   }
@@ -55,9 +57,9 @@ class SuratHandler {
     if (!cekSurat) {
       return res.status(404).send({
         code: 404,
-        status: 'Failed',
+        status: 'Gagal',
         error: true,
-        message: `Surat "${surat}" is not found`,
+        message: `Surat "${surat}" tidak ditemukan`,
         data: {},
       });
     }
@@ -65,20 +67,19 @@ class SuratHandler {
     if (!cekAyat) {
       return res.status(404).send({
         code: 404,
-        status: 'Failed',
+        status: 'Gagal',
         error: true,
-        message: `Ayat "${ayat}" is not found`,
+        message: `Ayat "${ayat}" is tidak ditemukan`,
         data: {},
       });
     }
 
     const dataSurat = { ...cekSurat };
-    delete dataSurat.verses;
+    // delete dataSurat.verses;
     const data = { ...cekAyat, surat: dataSurat };
     return res.status(200).send({
       code: 200,
       status: 'Sukses',
-      error: false,
       message: 'Sukses',
       data,
     });

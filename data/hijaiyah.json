@@ -4,204 +4,175 @@
       "arabic": "ا",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/00_Alif.wav",
       "pronounciation": "alif",
-      "prediction":"Alif",
-      "available": true
+      "prediction": "Alif"
     },
     {
       "arabic": "ب",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/01_Ba.wav",
       "pronounciation": "ba",
-      "prediction":"Ba",
-      "available": false
+      "prediction": "Ba"
     },
     {
       "arabic": "ت",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/02_Ta.wav",
       "pronounciation": "ta",
-      "prediction":"Ta",
-      "available": false
+      "prediction": "Ta"
     },
     {
       "arabic": "ث",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/03_Tsa.wav",
       "pronounciation": "tsa",
-      "prediction":"Sa",
-      "available": false
+      "prediction": "Sa"
     },
     {
       "arabic": "ج",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/04_Jim.wav",
       "pronounciation": "jim",
-      "prediction":"Jeem",
-      "available": false
+      "prediction": "Jeem"
     },
     {
       "arabic": "ح",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/05_Hha.wav",
       "pronounciation": "ha",
-      "prediction":"Hha",
-      "available": false
+      "prediction": "Hha"
     },
     {
       "arabic": "خ",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/06_Kha.wav",
       "pronounciation": "kho",
-      "prediction":"Kha",
-      "available": false
+      "prediction": "Kha"
     },
     {
       "arabic": "د",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/07_Dal.wav",
       "pronounciation": "dal",
-      "prediction":"Dal",
-      "available": true
+      "prediction": "Dal"
     },
     {
       "arabic": "ذ",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/08_Dzhal.wav",
       "pronounciation": "dzal",
-      "prediction":"Zhal",
-      "available": false
+      "prediction": "Zhal"
     },
     {
       "arabic": "ر",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/09_Raa.wav",
       "pronounciation": "ro",
-      "prediction":"Raa",
-      "available": false
+      "prediction": "Raa"
     },
     {
       "arabic": "ز",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/10_Zaa.wav",
       "pronounciation": "zai",
-      "prediction":"Zaa",
-      "available": false
+      "prediction": "Zaa"
     },
     {
       "arabic": "س",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/11_Sin.wav",
       "pronounciation": "sin",
-      "prediction":"Seen",
-      "available": true
+      "prediction": "Seen"
     },
     {
       "arabic": "ش",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/12_Syin.wav",
       "pronounciation": "syin",
-      "prediction":"Sheen",
-      "available": false
+      "prediction": "Sheen"
     },
     {
       "arabic": "ص",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/13_Shad.wav",
       "pronounciation": "shod",
-      "prediction":"Suad",
-      "available": false
+      "prediction": "Suad"
     },
     {
       "arabic": "ض",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/14_Dhad.wav",
       "pronounciation": "dhod",
-      "prediction":"Duad",
-      "available": false
+      "prediction": "Duad"
     },
     {
       "arabic": "ط",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/15_Tha.wav",
       "pronounciation": "tho",
-      "prediction":"Tua",
-      "available": true
+      "prediction": "Tua"
     },
     {
       "arabic": "ظ",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/16_Zha.wav",
       "pronounciation": "zho",
-      "prediction":"Zua",
-      "available": false
+      "prediction": "Zua"
     },
     {
       "arabic": "ع",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/17_'Aain.wav",
       "pronounciation": "'ain",
-      "prediction":"Aain",
-      "available": false
+      "prediction": "Aain"
     },
     {
       "arabic": "ﻍ",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/18_Ghain.wav",
       "pronounciation": "ghoin",
-      "prediction":"Ghain",
-      "available": false
+      "prediction": "Ghain"
     },
     {
       "arabic": "ﻑ",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/19_Fa.wav",
       "pronounciation": "fa",
-      "prediction":"Faa",
-      "available": true
+      "prediction": "Faa"
     },
     {
       "arabic": "ﻕ",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/20_Qaf.wav",
       "pronounciation": "qof",
-      "prediction":"Quaf",
-      "available": false
+      "prediction": "Quaf"
     },
     {
       "arabic": "ﻙ",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/21_Kaf.wav",
       "pronounciation": "kaf",
-      "prediction":"Kaif",
-      "available": false
+      "prediction": "Kaif"
     },
     {
       "arabic": "ﻝ",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/22_Lam.wav",
       "pronounciation": "lam",
-      "prediction":"Laam",
-      "available": true
+      "prediction": "Laam"
     },
     {
       "arabic": "ﻡ",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/23_Mim.wav",
       "pronounciation": "mim",
-      "prediction":"Meem",
-      "available": false
+      "prediction": "Meem"
     },
     {
       "arabic": "ن",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/24_Nun.wav",
       "pronounciation": "nun",
-      "prediction":"Noon",
-      "available": true
+      "prediction": "Noon"
     },
     {
       "arabic": "ه",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/26_Haa.wav",
       "pronounciation": "ha",
-      "prediction":"Haa",
-      "available": false
+      "prediction": "Haa"
     },
     {
       "arabic": "و",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/25_Wau.wav",
       "pronounciation": "wau",
-      "prediction":"Wao",
-      "available": false
+      "prediction": "Wao"
     },
     {
       "arabic": "ء",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/28_Hamzah.wav",
       "pronounciation": "hamzah",
-      "prediction":"Hamzah",
-      "available": false
+      "prediction": "Hamzah"
     },
     {
       "arabic": "ي",
       "audio": "https://storage.googleapis.com/surat-ayat/DatasetHijaiyah/27_Yaa.wav",
       "pronounciation": "ya",
-      "prediction":"Yaa",
-      "available": false
+      "prediction": "Yaa"
     }
   ]
 }
